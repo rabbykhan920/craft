@@ -1,0 +1,20 @@
+<section class="bg-[#081828] text-white">
+    <div class="hero">
+        <div class="hero-content flex-col lg:flex-row-reverse ">
+            <div class="ml-24">
+          <img
+            src="img/hero-image.png"
+            class="max-w-sm rounded-lg shadow-2xl" />
+        </div>
+          <div>
+            <h3 class="text-xl font-medium text-[#7E57FF] mb-8">We Are Creative Digital Agency</h3>
+            <h1 class="text-5xl font-semibold">Strategic Concepts For <br> Businesses.</h1>
+            <p class="py-6 text-xl">
+                Invest your spare change in Bitcoin and save with <br>
+                crypto to e arn interest in real time.
+            </p>
+            <button class="btn text-black bg-[#7E57FF] hover:bg-[#F1F9FA] text-xl rounded-full">Discover More</button>
+          </div>
+        </div>
+      </div>    
+</section>
