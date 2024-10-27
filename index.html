@@ -15,6 +15,14 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- links -->
+     <!-- effect -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- effect -->
+
+  <script>
+    AOS.init();
+  </script>
      <!-- font awsome -->
      <script src="https://kit.fontawesome.com/b584887cdf.js" crossorigin="anonymous"></script>
      <!-- font awsome -->
@@ -55,24 +63,24 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3  shadow  text-white">
-                  <li><a>Home</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Projects</a></li>
-                  <li><a>Team</a></li>
-                  <li><a>Contact</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#survises">Services</a></li>
+                  <li><a href="#about us">About Us</a></li>
+                  <li><a href="#Projects">Projects</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <a href="index.html" class="btn text-4xl lg:ml-44 bg-[#081828] hover:bg-transparent text-white border-none">Craft</a>
         </div>
         <div class="navbar hidden lg:flex ">
             <ul class="menu menu-horizontal px-1  text-white text-xl">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Team</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#survises">Services</a></li>
+                <li><a href="#about us">About Us</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         
@@ -80,7 +88,8 @@
     <!-- navication-section -->
 
 <!-- banner-section -->
-<section class="bg-[#081828] text-white ">
+<section id="home" class="bg-[#081828] text-white ">
+  
   <div class="hero ">
      <div class="hero-content flex-col lg:flex-row-reverse">
          <div class="">
@@ -88,6 +97,7 @@
          src="img/hero-image.png"
          class="max-w-sm rounded-lg shadow-2xl lg:block hidden " />
      </div>
+     <div data-aos="fade-up">
        <div class="xl:mr-52">
          <h3 class="text-xl font-medium text-[#7E57FF] mb-8">We Are Creative Digital Agency</h3>
  
@@ -96,10 +106,11 @@
              Invest your spare change in Bitcoin and save with <br>
              crypto to e arn interest in real time.
          </p>
-         <button class="btn text-black bg-[#7E57FF] hover:bg-[#F1F9FA] text-xl rounded-full">Discover More</button>
+         <button class="btn text-white bg-[#7E57FF] hover:bg-[#F1F9FA] hover:text-black text-xl rounded-full border-none">Discover More</button>
        </div>
      </div>
    </div>
+  </div>
  </section>
  <!-- banner-section -->
 
@@ -110,7 +121,8 @@
  
 
 <!-- our survises start -->
-<section class="py-12 my-24 bg-[#F4F7FA]">
+<section id="survises" class="py-12 my-24 bg-[#F4F7FA]">
+  <div data-aos="fade-down">
     <!-- heading -->
      <div class="text-center">
      <h3 class="text-xl font-medium text-[#7E57FF] mb-4">What We Offer</h3>
@@ -118,13 +130,14 @@
      <p class="text-lg text-[#9A9A9A] ">There are many variations of passages of Lorem Ipsum available, but the majority <br>have suffered alteration in some form.</p>
     </div>
     <!-- heading -->
-
+  </div>
+  <div data-aos="fade-right">
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10 gap-10">
            <!-- card-1-start -->
-           <div class="card bg-base-100 text-center">
-            <figure>
-              <img src="" alt="icon">
-            </figure>
+           <div class="card bg-base-100 text-center py-5 ">
+           <div class="">
+            <i class="fa-brands fa-microsoft text-4xl text-white bg-[#7E57FF] p-6 rounded-box"></i>
+           </div>
             <div class="card-body">
               <h2 class=" text-2xl font-semibold">Brand Identity Design</h2>
               <p class="text-lg text-[#9A9A9A] ">Invest in Bitcoin on the regular or save with <br> one of the highest interest rates on the <br> market.</p>
@@ -133,10 +146,10 @@
           </div>
             <!-- card-1-end -->
             <!-- card-2-start -->
-            <div class="card bg-base-100 text-center">
-              <figure>
-                <img src="" alt="icon">
-              </figure>
+            <div class="card bg-base-100 text-center py-5">
+              <div class="">
+                <i class="fa-solid fa-magnifying-glass-chart  text-4xl text-white bg-[#7E57FF] p-6 rounded-box"></i>
+               </div>
               <div class="card-body">
                 <h2 class=" text-2xl font-semibold">Digital Marketing</h2>
                 <p class="text-lg text-[#9A9A9A] ">Invest in Bitcoin on the regular or save with <br> one of the highest interest rates on the <br> market.</p>
@@ -145,10 +158,10 @@
             </div>
             <!-- card-2-end -->
              <!-- card-3-start -->
-             <div class="card bg-base-100 text-center">
-              <figure>
-                <img src="" alt="icon">
-              </figure>
+             <div class="card bg-base-100 text-center py-5">
+              <div class="">
+                <i class="fa-solid fa-bezier-curve text-3xl text-white bg-[#7E57FF] p-6 rounded-box "></i>
+               </div>
               <div class="card-body">
                 <h2 class=" text-2xl font-semibold">Design and Development</h2>
                 <p class="text-lg text-[#9A9A9A] ">Invest in Bitcoin on the regular or save with <br> one of the highest interest rates on the <br> market.</p>
@@ -157,10 +170,10 @@
             </div>
              <!-- card-3-end -->
              <!-- card-4-start -->
-             <div class="card bg-base-100 text-center">
-              <figure>
-                <img src="" alt="icon">
-              </figure>
+             <div class="card bg-base-100 text-center py-5">
+              <div class="">
+                <i class="fa-solid fa-book text-4xl text-white bg-[#7E57FF] p-6 rounded-box"></i>
+               </div>
               <div class="card-body">
                 <h2 class=" text-2xl font-semibold">IT Consulting Service</h2>
                 <p class="text-lg text-[#9A9A9A] ">Invest in Bitcoin on the regular or save with <br> one of the highest interest rates on the <br> market.</p>
@@ -169,10 +182,10 @@
             </div>
             <!-- card-4-end -->
             <!--card-5-start  -->
-            <div class="card bg-base-100 text-center">
-              <figure>
-                <img src="" alt="icon">
-              </figure>
+            <div class="card bg-base-100 text-center py-5">
+             <div class="">
+              <i class="fa-solid fa-cloud-meatball text-4xl text-white bg-[#7E57FF] p-6 rounded-box"></i>
+             </div>
               <div class="card-body">
                 <h2 class=" text-2xl font-semibold">Cloud Computing</h2>
                 <p class="text-lg text-[#9A9A9A] ">Invest in Bitcoin on the regular or save with <br> one of the highest interest rates on the <br> market.</p>
@@ -181,10 +194,10 @@
             </div>
             <!--card-5-end  -->
             <!--card-6-start  -->
-            <div class="card bg-base-100  text-center">
-              <figure>
-                <img src="" alt="icon">
-              </figure>
+            <div class="card bg-base-100  text-center py-5">
+              <div class="">
+                <i class="fa-solid fa-desktop text-4xl text-white bg-[#7E57FF] p-6 rounded-box"></i>
+              </div>
               <div class="card-body">
                 <h2 class=" text-2xl font-semibold">Graphics Design</h2>
                 <p class="text-lg text-[#9A9A9A] ">Invest in Bitcoin on the regular or save with <br> one of the highest interest rates on the <br> market.</p>
@@ -192,10 +205,12 @@
               </div>
             </div>
             <!--card-6-end  -->
+          </div>  
 </section>
 <!-- our survises end -->
  <!-- about us start -->
- <section class="my-24">
+ <section id="about us" class="my-24">
+  <div data-aos="fade-down">
    <!-- heading -->
    <div class="text-center">
     <h3 class="text-xl font-medium text-[#7E57FF] mb-4">What we do</h3>
@@ -203,12 +218,14 @@
     <p class="text-lg text-[#9A9A9A] ">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form.</p>
    </div>
    <!-- heading -->
+  </div>
  <div class="mt-10 ">
   <div class="hero ">
     <div class="hero-content flex-col lg:flex-row">
       <img
         src="img/about-image.jpg"
         class="w-1/2 rounded-lg shadow-2xl" />
+        <div data-aos="fade-left">
       <div class="ml-10">
         <h3 class="md:text-xl font-medium text-[#7E57FF] mb-4 mt-4">DECENTRALISED ECONOMY</h3>
         <h1 class="md:text-5xl text-3xl font-semibold">We’ve built a platform to buy <br> and sell shares.</h1>
@@ -235,6 +252,8 @@
         </div>
         
       </div>
+
+      </div>
     </div>
   </div>
  </div>
@@ -242,7 +261,8 @@
  </section>
  <!-- about us end -->
   <!-- latest work -->
-  <section class="my-24">
+  <section id="Projects" class="my-24">
+    <div data-aos="fade-down">
    <!-- heading -->
    <div class="text-center">
     <h3 class="text-xl font-medium text-[#7E57FF] mb-4">Case Study</h3>
@@ -250,6 +270,7 @@
     <p class="text-lg text-[#9A9A9A] ">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form.</p>
    </div>
    <!-- heading --> 
+  </div>
     <!-- option btn -->
      
     <!-- option btn -->
@@ -338,7 +359,8 @@
   </section>
   <!-- latest work -->
    <!-- our team -->
-   <section class="my-24">
+   <section id="team" class="my-24">
+    <div data-aos="fade-down">
     <!-- heading -->
    <div class="text-center">
     <h3 class="text-xl font-medium text-[#7E57FF] mb-4">Expert Team</h3>
@@ -346,8 +368,10 @@
     <p class="text-lg text-[#9A9A9A] ">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form.</p>
    </div>
    <!-- heading -->
-
+  </div>
+  <div data-aos="fade-right">
    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+   
     <!-- profile-1 -->
     <div class="card ">
       <figure class="px-10 pt-10">
@@ -428,21 +452,24 @@
       </div>
     </div>
     <!-- profile-4 -->
+     
    </div>
- 
+  </div>
 
 
    </section>
    <!-- our team -->
    <!-- Our Testimonials -->
    <section class="my-40  py-24 bg-[#F4F7FA]">
-   <!-- heading -->
+     <div data-aos="fade-down">
+     <!-- heading -->
    <div class="text-center mb-10">
     <h3 class="text-xl font-medium text-[#7E57FF] mb-4">Customer Reviews</h3>
     <h2 class="md:text-5xl text-3xl font-bold mb-4">Our Testimonials</h2>
     <p class="text-lg text-[#9A9A9A] ">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form.</p>
    </div>
    <!-- heading -->
+  </div>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
     <!-- card-1 -->
     <div class="card bg-base-100 shadow-xl">
@@ -497,7 +524,8 @@
   </section>
   <!-- Our Testimonials -->
    <!-- contuct us -->
-   <section class="my-40">
+   <section id="contact" class="my-40">
+    <div data-aos="fade-down">
     <!-- heading -->
    <div class="text-center mb-10">
     <h3 class="text-xl font-medium text-[#7E57FF] mb-4">Get In Touch</h3>
@@ -505,7 +533,7 @@
     <p class="text-lg text-[#9A9A9A] ">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form.</p>
    </div>
    <!-- heading -->
-
+  </div>
    <div class="flex justify-evenly ">
             
     <div class="flex flex-col lg:flex-row md:gap-20 xl:gap-10 gap-5 mt-24 ">
@@ -618,6 +646,10 @@
  
  <!-- footer end -->
 
-
+ <script>
+  AOS.init({
+    duration:1200
+  })
+</script>
 </body>
 </html>
